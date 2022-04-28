@@ -127,6 +127,15 @@
         "goofy"
       ],
       "id": "12"
+    },
+    {
+      "name": "Bug",
+      "species": "Bat",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "13"
     }
   ]
 }
