@@ -9,6 +9,7 @@ const { animals } = require('./data/animals.json');
 // allows POST requests to be interpretted as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 // filters our animals list based on a query parameter
 function filterByQuery(query, animalsArray) {
@@ -109,6 +110,10 @@ app.post('/api/animals', (req, res) => {
     res.json(animal);
     }
 });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+})
 
 // initializes server port
 app.listen(PORT, () => {
