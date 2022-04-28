@@ -29,10 +29,10 @@ router.post('/animals', (req, res) => {
 
     // validates if the animal is correct before adding it to our json data
     if (!validateAnimal(req.body)) {
-        res.status(400).send('The animal is not formatted properly.');        
+        res.status(400).send('The animal is not formatted properly.');
     } else {
-    const animal = createNewAnimal(req.body, animals);   
-    res.json(animal);
+        const animal = createNewAnimal(req.body, animals);
+        res.json(animal);
     }
 });
 
