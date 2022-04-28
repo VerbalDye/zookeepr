@@ -108,6 +108,25 @@
         "hungry"
       ],
       "id": "10"
+    },
+    {
+      "name": "Jack",
+      "species": "Rabbit",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "anxious",
+        "loving"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Tyler",
+      "species": "Turtle",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }
